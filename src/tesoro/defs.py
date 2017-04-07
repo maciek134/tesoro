@@ -1,3 +1,20 @@
+# Copyright © 2016 Maciej Sopyło
+#
+# This file is part of Tesoro Python library.
+#
+# Tesoro Python library is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# Tesoro Python library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with Tesoro Python library.  If not, see <http://www.gnu.org/licenses/>.
+
 keyDefs = {
     'Escape': 0x0b,
     'F1': 0x16,
@@ -105,9 +122,7 @@ keyDefs = {
     'KPPeriod': 0x6b
 }
 
-cmd = {
-    'mode': 0x0a,
-    'profile': 0x03,
-    'color': 0x0b,
-    'colorSpectrum': 0x0d
-}
+CMD_MODE =              0x0a
+CMD_PROFILE =           0x03
+CMD_COLOR =             0x0b
+CMD_COLOR_SPECTRUM =    0x0d

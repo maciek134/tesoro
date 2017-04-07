@@ -14,7 +14,7 @@ def read(*names, **kwargs):
 
 setup(
     name = "tesoro",
-    version = "0.1.0",
+    version = "0.1.4",
     license = "GPLv3",
     description = "Library for interfacing with Tesoro hardware",
     author = "Maciej Sopyło",
