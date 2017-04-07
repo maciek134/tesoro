@@ -49,15 +49,15 @@ __For now only returns Gram Spectrum keyboard__
 ## tesoro.setProfile(productId, profile)
 Change active profile.
 
-**productId**: product id of the device you want to talk to
+**productId**: product id of the device you want to talk to  
 **profile**: target profile; 1-5 for gaming profiles, 6 for pc mode
 
 ## tesoro.setColor(productId, color, profile)
 Set the color used for standard lighting effects
 __This won't set all keys color for spectrum mode!__
 
-**productId**: product id of the device you want to talk to
-**color**: `dict<red,green,blue>` or `QColor` to set
+**productId**: product id of the device you want to talk to  
+**color**: `dict<red,green,blue>` or `QColor` to set  
 **profile**: target profile; 1-5 for gaming profiles, 6 for pc mode
 
 ## setMode(productId, mode, profile, submode = 0)
@@ -65,14 +65,14 @@ Set lighting mode
 __When setting colors in spectrum mode the keyboard will switch to it automatically,
 so no need to call this function unless you want to change the submode.__
 
-**productId**: product id of the device you want to talk to
-**mode**: lighting mode; 0 - standard, 1 - trigger, 2 - ripple, 3 - firework, 4 - radiation, 5 - breathing, 6 - rainbow wave, 8 - spectrum colors
-**profile**: target profile; 1-5 for gaming profiles, 6 for pc mode
+**productId**: product id of the device you want to talk to  
+**mode**: lighting mode; 0 - standard, 1 - trigger, 2 - ripple, 3 - firework, 4 - radiation, 5 - breathing, 6 - rainbow wave, 8 - spectrum colors  
+**profile**: target profile; 1-5 for gaming profiles, 6 for pc mode  
 **submode**: sub mode for spectrum colors; 0 - shine, 1 - breathing, 2 - trigger; 0 for standard modes
 
 ## setKeyColors(productId, colors, profile)
 Set individual key colors (spectrum mode in original software)
 
-**productId**: product id of the device you want to talk to
-**colors**: dictionary <key>:<color>, where <key> is a key name from `defs.py` and <color> is a `dict<red,green,blue>` or `QColor`
+**productId**: product id of the device you want to talk to  
+**colors**: dictionary <key>:<color>, where <key> is a key name from `defs.py` and <color> is a `dict<red,green,blue>` or `QColor`  
 **profile**: target profile; 1-5 for gaming profiles, 6 for pc mode
