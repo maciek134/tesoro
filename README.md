@@ -5,8 +5,8 @@ Python 3 library for interfacing with Tesoro hardware
 This is still a work in progress. Basic functionality for lighting management is
 there, but no support for macros / key rebinding / auto profile switching.
 
-I will be adding these features, but in the mean time keep in mind that the API
-**will** change until I hit 1.x release!
+I will no longer actively work on this library - I stopped using the keyboard because 
+it was low quality, but I will try to fix issues / review PRs.
 
 Also it's only tested on Tesoro Gram Spectrum, because that's the only one I have.
 I'm not sure if the protocol changes between different devices (like Razer does),
@@ -45,6 +45,17 @@ you only need their names, and they are based on `xdotool`'s key names.
 ## tesoro.getDeviceList()
 Get connected Tesoro devices
 __For now only returns Gram Spectrum keyboard__
+
+Returns an array of objects in the following format:
+```python
+{
+  'name' # device's name
+  'bus' # the bus the device is connected to
+  'address' # the address of the device on said bus
+  'productId' # device's product id
+  'type' # device's type, for now only TYPE_KEYBOARD = 2
+}
+```
 
 ## tesoro.setProfile(productId, profile)
 Change active profile.
